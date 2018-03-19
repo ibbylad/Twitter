@@ -24,13 +24,24 @@
     <p>This is our Twitter API canvas.</p>
 
     <!--Canvas set up-->
-    <canvas id="Twitter" width="1000" height="700" style="border:3px solid black; background: #f0a846;"></canvas>
+    <canvas id="Twitter" width="1000" height="700" style="border:3px solid black; background: #fff;"></canvas>
 
     <script>
         // Twitter canvas............................//
         var canvas = document.getElementById('Twitter');
         var ctx = canvas.getContext('2d');
         // Once only......................//
+        
+    var request = new XMLHttpRequest();
+       request.open("GET", "tweets.json", false);
+       request.send(null)
+       var my_JSON_object = JSON.parse(request.responseText);
+       alert (my_JSON_object.result[0]);  
+        
+        document.getElementById("test").innerHTML = my_JSON_object.text;
+        
+        console.log(my_JSON_object);
+    
     </script>
     </body>
 </html>

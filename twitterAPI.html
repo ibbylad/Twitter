@@ -12,10 +12,12 @@
     <style>
         @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
         /*Font imported from Google fonts.*/
+
         body {
             font-family: 'Roboto Slab', serif;
             /*Font for the body of the page*/
         }
+
     </style>
 </head>
 
@@ -24,24 +26,15 @@
     <p>This is our Twitter API canvas.</p>
 
     <!--Canvas set up-->
-    <canvas id="Twitter" width="1000" height="700" style="border:3px solid black; background: #fff;"></canvas>
+    <canvas id="Twitter" width="1000" height="500" style="border:3px solid black; background:#071c3d;"></canvas>
 
     <script>
         // Twitter canvas............................//
         var canvas = document.getElementById('Twitter');
         var ctx = canvas.getContext('2d');
         // Once only......................//
-        
-    var request = new XMLHttpRequest();
-       request.open("GET", "tweets.json", false);
-       request.send(null)
-       var my_JSON_object = JSON.parse(request.responseText);
-       alert (my_JSON_object.result[0]);  
-        
-        document.getElementById("test").innerHTML = my_JSON_object.text;
-        
-        console.log(my_JSON_object);
-    
+
     </script>
-    </body>
+</body>
+
 </html>

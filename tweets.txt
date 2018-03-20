@@ -1,0 +1,277 @@
+[
+    {
+        "created_at": "Tue Mar 20 13:46:10 +0000 2018",
+        "id": 976092537000689700,
+        "id_str": "976092537000689665",
+        "text": "Nick Saban is ready for another season -- and that's just the beginning https://t.co/ikWu9Rx8jW",
+        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 20065063,
+            "id_str": "20065063",
+            "name": "John Shoemaker",
+            "screen_name": "wncbama",
+            "location": "Quebec Mountain, NC",
+            "url": null,
+            "description": "WV raised, '67 Bama grad, retired to WNC & enjoying time with bride, family, church & the Crimson Tide, plus looking at unusual things going on in this world.",
+            "translator_type": "none",
+            "protected": false,
+            "verified": false,
+            "followers_count": 34,
+            "friends_count": 91,
+            "listed_count": 2,
+            "favourites_count": 938,
+            "statuses_count": 1663,
+            "created_at": "Wed Feb 04 16:15:15 +0000 2009",
+            "utc_offset": -14400,
+            "time_zone": "Eastern Time (US & Canada)",
+            "geo_enabled": true,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "profile_background_color": "EBEBEB",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/698286765/e500446579fe7d7385f9e8cb41f37a48.jpeg",
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/698286765/e500446579fe7d7385f9e8cb41f37a48.jpeg",
+            "profile_background_tile": true,
+            "profile_link_color": "990000",
+            "profile_sidebar_border_color": "FFFFFF",
+            "profile_sidebar_fill_color": "F3F3F3",
+            "profile_text_color": "333333",
+            "profile_use_background_image": true,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/685437721502863361/PmDNWAw4_normal.jpg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/685437721502863361/PmDNWAw4_normal.jpg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/20065063/1452264545",
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": null,
+            "follow_request_sent": null,
+            "notifications": null
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "quote_count": 0,
+        "reply_count": 0,
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "entities": {
+            "hashtags": [],
+            "urls": [
+                {
+                    "url": "https://t.co/ikWu9Rx8jW",
+                    "expanded_url": "http://www.espn.com/college-football/story/_/id/22833828",
+                    "display_url": "espn.com/college-footba…",
+                    "indices": [
+                        72,
+                        95
+                    ]
+                }
+            ],
+            "user_mentions": [],
+            "symbols": []
+        },
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "filter_level": "low",
+        "lang": "en",
+        "timestamp_ms": "1521553570400"
+    },
+    {
+        "created_at": "Tue Mar 20 13:46:10 +0000 2018",
+        "id": 976092537374076900,
+        "id_str": "976092537374076928",
+        "text": "World Cup winner ☑️\nRangers and Celtic duos ☑️\nEx-Real Madrid target ☑️\n\n14 players Alex McLeish and Scotland could… https://t.co/wgDXeL9Mi9",
+        "display_text_range": [
+            0,
+            140
+        ],
+        "source": "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+        "truncated": true,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 20583090,
+            "id_str": "20583090",
+            "name": "The Scottish Sun",
+            "screen_name": "ScottishSun",
+            "location": "Glasgow, UK",
+            "url": "http://www.thescottishsun.co.uk",
+            "description": "Get the latest Scottish news, entertainment and sport from your No.1 Scottish Sun. Also on Facebook http://fb.com/thescottishsun",
+            "translator_type": "none",
+            "protected": false,
+            "verified": true,
+            "followers_count": 40548,
+            "friends_count": 886,
+            "listed_count": 502,
+            "favourites_count": 599,
+            "statuses_count": 139793,
+            "created_at": "Wed Feb 11 11:10:40 +0000 2009",
+            "utc_offset": 0,
+            "time_zone": "London",
+            "geo_enabled": true,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "profile_background_color": "FFFFFF",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/378800000100874465/a6f55c73ec0b245fa629be31c2130a95.gif",
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/378800000100874465/a6f55c73ec0b245fa629be31c2130a95.gif",
+            "profile_background_tile": false,
+            "profile_link_color": "0084B4",
+            "profile_sidebar_border_color": "FFFFFF",
+            "profile_sidebar_fill_color": "DDEEF6",
+            "profile_text_color": "242124",
+            "profile_use_background_image": true,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/875725797801242625/5_xO_Vik_normal.jpg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/875725797801242625/5_xO_Vik_normal.jpg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/20583090/1502089170",
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": null,
+            "follow_request_sent": null,
+            "notifications": null
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "extended_tweet": {
+            "full_text": "World Cup winner ☑️\nRangers and Celtic duos ☑️\nEx-Real Madrid target ☑️\n\n14 players Alex McLeish and Scotland could pinch from England or LOSE to rival nations https://t.co/FF7qEFsEhu https://t.co/dnjRd4LwxS",
+            "display_text_range": [
+                0,
+                183
+            ],
+            "entities": {
+                "hashtags": [],
+                "urls": [
+                    {
+                        "url": "https://t.co/FF7qEFsEhu",
+                        "expanded_url": "https://www.thescottishsun.co.uk/sport/football/2389692/josh-george-mceachran-john-bostock-joe-bryan-karamoko-dembele-greg-docherty-scotland-england/",
+                        "display_url": "thescottishsun.co.uk/sport/football…",
+                        "indices": [
+                            160,
+                            183
+                        ]
+                    }
+                ],
+                "user_mentions": [],
+                "symbols": [],
+                "media": [
+                    {
+                        "id": 976092530768048100,
+                        "id_str": "976092530768048128",
+                        "indices": [
+                            184,
+                            207
+                        ],
+                        "media_url": "http://pbs.twimg.com/media/DYvG_DRXcAAaAXb.jpg",
+                        "media_url_https": "https://pbs.twimg.com/media/DYvG_DRXcAAaAXb.jpg",
+                        "url": "https://t.co/dnjRd4LwxS",
+                        "display_url": "pic.twitter.com/dnjRd4LwxS",
+                        "expanded_url": "https://twitter.com/ScottishSun/status/976092537374076928/photo/1",
+                        "type": "photo",
+                        "sizes": {
+                            "thumb": {
+                                "w": 150,
+                                "h": 150,
+                                "resize": "crop"
+                            },
+                            "large": {
+                                "w": 455,
+                                "h": 249,
+                                "resize": "fit"
+                            },
+                            "medium": {
+                                "w": 455,
+                                "h": 249,
+                                "resize": "fit"
+                            },
+                            "small": {
+                                "w": 455,
+                                "h": 249,
+                                "resize": "fit"
+                            }
+                        }
+                    }
+                ]
+            },
+            "extended_entities": {
+                "media": [
+                    {
+                        "id": 976092530768048100,
+                        "id_str": "976092530768048128",
+                        "indices": [
+                            184,
+                            207
+                        ],
+                        "media_url": "http://pbs.twimg.com/media/DYvG_DRXcAAaAXb.jpg",
+                        "media_url_https": "https://pbs.twimg.com/media/DYvG_DRXcAAaAXb.jpg",
+                        "url": "https://t.co/dnjRd4LwxS",
+                        "display_url": "pic.twitter.com/dnjRd4LwxS",
+                        "expanded_url": "https://twitter.com/ScottishSun/status/976092537374076928/photo/1",
+                        "type": "photo",
+                        "sizes": {
+                            "thumb": {
+                                "w": 150,
+                                "h": 150,
+                                "resize": "crop"
+                            },
+                            "large": {
+                                "w": 455,
+                                "h": 249,
+                                "resize": "fit"
+                            },
+                            "medium": {
+                                "w": 455,
+                                "h": 249,
+                                "resize": "fit"
+                            },
+                            "small": {
+                                "w": 455,
+                                "h": 249,
+                                "resize": "fit"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "quote_count": 0,
+        "reply_count": 0,
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "entities": {
+            "hashtags": [],
+            "urls": [
+                {
+                    "url": "https://t.co/wgDXeL9Mi9",
+                    "expanded_url": "https://twitter.com/i/web/status/976092537374076928",
+                    "display_url": "twitter.com/i/web/status/9…",
+                    "indices": [
+                        117,
+                        140
+                    ]
+                }
+            ],
+            "user_mentions": [],
+            "symbols": []
+        },
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "filter_level": "low",
+        "lang": "en",
+        "timestamp_ms": "1521553570489"
+    }
+]

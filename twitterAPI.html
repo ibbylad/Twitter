@@ -23,18 +23,35 @@
 
 <body>
     <h1>Twitter</h1>
-    <p>This is our Twitter API canvas.</p>
+    <p>This is our Twitter canvas.</p>
 
     <!--Canvas set up-->
     <canvas id="Twitter" width="1000" height="500" style="border:3px solid black; background:#071c3d;"></canvas>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         // Twitter canvas............................//
         var canvas = document.getElementById('Twitter');
         var ctx = canvas.getContext('2d');
         // Once only......................//
 
+        // Pull in the data. Upload on to media server for use. 
+        $(document).ready(function() {
+            $("button").click(function() {
+                $.ajax({
+                    url: "tweets.txt",
+                    success: function(result) {
+                        $("#div1").html(result);
+                    }
+                });
+            });
+        });
+
     </script>
+    <div id="div1">
+        <h2>Let jQuery AJAX Change This Text</h2>
+    </div>
+    <button>Get External Content</button>
 </body>
 
 </html>

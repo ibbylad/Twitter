@@ -1,0 +1,32 @@
+{
+  "name": "twitter-stream",
+  "version": "1.0.0",
+  "description": "",
+  "main": "stream.js",
+  "scripts": {
+    "start": "node stream",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "twitter"
+  ],
+  "author": "",
+  "contributors": [
+    {
+      "name": "Ollie Crook",
+      "url": "https://github.com/olliecrook"
+    },
+    {
+      "name": "David Warrington",
+      "url": "https://github.com/davidwarrington"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidwarrington/twitter-stream"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "twitter": "^1.7.1"
+  }
+}

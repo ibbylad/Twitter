@@ -1,10 +1,10 @@
-/*refresh page 
-window.setInterval('refresh()', 5000); // CALL A FUNCTION EVERY 10000 MILLISECONDS OR 10 SECONDS.
-
-// REFRESH OR RELOAD PAGE.
-function refresh() {
-    window.location.reload();
-}
+//refresh page 
+//window.setInterval('refresh()', 5000); // CALL A FUNCTION EVERY 10000 MILLISECONDS OR 10 SECONDS.
+//
+//// REFRESH OR RELOAD PAGE.
+//function refresh() {
+//    window.location.reload();
+//}
 
 
 
@@ -22,13 +22,11 @@ ctx.canvas.height = window.innerHeight;
 
 
 //tweet information
-var url = "http://media.uclan.ac.uk/~iadam3/Code%20Design/Assignment%202/Twitter/tweets.json";
+var url = "http://media.uclan.ac.uk/~iadam3/Code%20Design/Assignment%202/tweets.json";
 
-//Current Blue: BLUE slows the heart rate, suppresses hunger and reduces blood pressure.
-//http://www.colourtheory.net/articles/colour_psychology.htm
-var textc = "#2F74A8",
+var textc = "#fff", // White for the text
     rheartc = "#e81c4f";
-// var bgc = "#5DB4F4";
+
 var img = new Image,
     prof = new Image;
 
@@ -36,7 +34,7 @@ var previous = null;
 var current = null;
 
 setInterval(function () {
-    $.getJSON("http://media.uclan.ac.uk/~iadam3/Code%20Design/Assignment%202/Twitter/tweets.json", function (json) {
+    $.getJSON("http://media.uclan.ac.uk/~iadam3/Code%20Design/Assignment%202/tweets.json", function (json) {
         current = JSON.stringify(json);
         if (previous && current && previous !== current) {
             console.log('refresh');
@@ -46,26 +44,22 @@ setInterval(function () {
     });
 }, 5000);
 
-
-
-
 /*downloads one or more urls
 Rdocumentation.org. (2018). getURL function | RDocumentation. [online] Available at: https://www.rdocumentation.org/packages/RCurl/versions/1.95-4.8/topics/getURL [Accessed 3 Apr. 2018].
-
 */
 
-
 function Get(url) {
-    var Httpreq = new XMLHttpRequest(); // a new request begins
+    var Httpreq = new XMLHttpRequest(); // Create a new request for the canvas
     //initialize or re-initialize request
     Httpreq.open("GET", url, false);
     Httpreq.send(null);
     return Httpreq.responseText;
 }
 
-//parse 
+// Function to create the JSON parse. 
 var obj = JSON.parse(Get(url));
 
+// Debugging the JSON object. 
 console.log(obj);
 
 init();
@@ -73,9 +67,7 @@ init();
 //Z
 function init() {
 
-    Z(ctx, ctx.canvas.width / 2, ctx.canvas.height / 2);
-
-
+    Z(ctx, ctx.canvas.width / 2, ctx.canvas.height / 2); // Set the dimension of where the function displays on the canvas. 
 
     //zFunctionBegin
     function Z(ctx, x, y) {
@@ -84,17 +76,9 @@ function init() {
         ctx.fillStyle = textc;
         ctx.textAlign = "center";
         ctx.textBaseline = 'middle';
-        ctx.fillText("Z", x, y);
         ctx.closePath();
 
-        // //time
-        // ctx.beginPath();
-        // ctx.font = "43px Arial";
-        // ctx.fillText("19:55", x + 6, y - 147);
-        // ctx.closePath();
-
-
-        //profile pic
+        // Displaying the user's profile picture
         ctx.beginPath();
         prof.onload = function () {
             ctx.beginPath();
@@ -108,38 +92,25 @@ function init() {
 
             ctx.closePath();
         };
+
+        // Sourcing the user's profile picture.
         prof.src = obj["0"].user.profile_image_url;
-
-
         ctx.closePath();
-        //profile pic
 
-        // //locationBegin - DATE AND TIME
-        // ctx.beginPath();
-        // ctx.textAlign = "center";
-        // ctx.textBaseline = "middle";
-        // ctx.font = "15px Arial";
-        // ctx.fillText(obj["0"].created_at, x + 4, y - 200);
-        // ctx.closePath();
-        // //locationEnd
-
-        // tweetBegin
+        // Display the tweet
         ctx.beginPath();
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
         ctx.font = ctx.canvas.width / 75 + "px Arial";
         ctx.fillText(obj["0"].text, x + 2, y + 200);
-
         ctx.closePath();
-        //tweetEnd
 
-        // extra info begin (Favourites on the account)
+        // The total favourite's on the tweet
         ctx.beginPath();
         img.onload = function () {
             ctx.drawImage(img, x - 47, y + 230);
         };
-        /* img.src = "img/heart32.png"; // Media.uclan.ac.uk is having trouble loading this fast enough */
-        img.src = "http://rainerleit.eu/json/img/heart32.png"; //See if this changes it
+        img.src = "http://media.uclan.ac.uk/~iadam3/Code%20Design/heart.png"; // Source for the favourite's icon.
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
         ctx.font = "18px Arial";
@@ -147,41 +118,9 @@ function init() {
         ctx.fillText(obj["0"].user.favourites_count, x - 30, y + 275);
         ctx.closePath();
 
-
-
-        // extra info end
-
-
-
-
-
-
-
     }
+} // End of the function.
 
 
-}
-
-
-
-
-
-
-//zFunctionEnd
-
-
-/*NOTES FOR ME
-canvas = width="800" height="500"
-------
-
-    <!-- X = to go left - minus
-     // X = to go right - add 
-     // Y - to go up - minus 
-     // Y - to go down - add-- - >
-
------
-References
------
-https://codepen.io/jboeijenga/pen/pveQBz?depth=everything&order=popularity&page=3&q=canvas+particle&show_forks=false
-
-*/
+//References:
+//https://codepen.io/jboeijenga/pen/pveQBz?depth=everything&order=popularity&page=3&q=canvas+particle&show_forks=false

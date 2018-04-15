@@ -27,7 +27,7 @@ const fs = require('fs'),
  */
 const config = {
     "output": "tweets.json",
-    "max_tweets": 10,
+    "max_tweets": 30,
     "params": {
         "track": "football"
     },

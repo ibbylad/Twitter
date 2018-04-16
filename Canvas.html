@@ -12,15 +12,11 @@
 
 <body>
     <!--Canvas set up-->
-    <canvas id="zCanvas" width="600" height="600" style="border:3px solid black; background:#071c3d; position: absolute; left: 0; top: 0; z-index: 1;">
+    <canvas id="zCanvas" width="600" height="600" style="border:3px solid black; background:#071c3d; position: absolute; left: 0; top: 0; z-index: 0;">
     </canvas>
-    <!--
-    <canvas id="Chart" width="600" height="600" style="border:3px solid black; background:#fff; position: absolute; left: 0; top: 0; z-index: 1;">
-    </canvas>
--->
 
     <script>
-        var chartData = [{
+        var data = [{
                 value: 300,
                 color: "cornflowerblue",
                 highlight: "lightskyblue",
@@ -35,7 +31,7 @@
         ];
 
         //draw
-        var piechart = new zCanvas(ctx).Doughnut(chartData);
+        var piechart = new chart(ctx).Doughnut(data);
 
     </script>
 

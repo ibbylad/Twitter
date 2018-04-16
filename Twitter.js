@@ -26,6 +26,7 @@ var textColour = "#fff", // White colour for the text
 var img = new Image, // Creating a new image variable for likes icon
     img2 = new Image, // Creating a new image variable for RTs icon
     prof = new Image; // Creating a new image variable for user's profile icon
+
 var previous = null;
 var current = null;
 
@@ -90,10 +91,6 @@ function init() {
         // Sourcing the user's profile picture.
         prof.src = obj["0"].user.profile_image_url;
         ctx.closePath();
-
-        // Doughnut title
-        ctx.font = "18px Verdana";
-        ctx.fillText("Doughtnut chart", 100, 100);
 
         // Display the tweet
         ctx.beginPath();

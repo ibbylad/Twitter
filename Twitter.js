@@ -73,24 +73,26 @@ function init() {
         ctx.textBaseline = 'middle';
         ctx.closePath();
 
+        // Sourcing the user's profile picture.
+        prof.src = obj["0"].user.profile_image_url;
+        ctx.closePath();
+
         // Displaying the user's profile picture
         ctx.beginPath();
         prof.onload = function () {
             ctx.beginPath();
-            ctx.arc(x + 24, y + 252, 24, 0, 2 * Math.PI);
+            ctx.arc(x - 122, y + 125, 24, 0, 2 * Math.PI);
             ctx.strokeStyle = "#fff";
             ctx.lineWidth = 4;
             ctx.stroke();
 
             ctx.clip();
-            ctx.drawImage(prof, x, y + 227);
+            ctx.drawImage(prof, x - 146, y + 100);
 
             ctx.closePath();
         };
 
-        // Sourcing the user's profile picture.
-        prof.src = obj["0"].user.profile_image_url;
-        ctx.closePath();
+
 
         // Display the tweet
         ctx.beginPath();

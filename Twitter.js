@@ -17,7 +17,7 @@ ctx.canvas.width = window.innerWidth;
 ctx.canvas.height = window.innerHeight;
 
 // Where to source tweets from
-var url = "http://media.uclan.ac.uk/~iadam3/Code%20Design/Assignment%202/tweets.json";
+var url = "http://rainerleit.eu/jsonib/tweets.json";
 
 var textColour = "#fff", // White colour for the text
     likesColour = "#e81c4f", // Red for the likes number text
@@ -30,7 +30,7 @@ var previous = null;
 var current = null;
 
 setInterval(function () {
-    $.getJSON("http://media.uclan.ac.uk/~iadam3/Code%20Design/Assignment%202/tweets.json", function (json) {
+    $.getJSON("http://rainerleit.eu/jsonib/tweets.json", function (json) {
         current = JSON.stringify(json);
         if (previous && current && previous !== current) {
             console.log('refresh');
@@ -90,6 +90,10 @@ function init() {
         // Sourcing the user's profile picture.
         prof.src = obj["0"].user.profile_image_url;
         ctx.closePath();
+
+        // Doughnut title
+        ctx.font = "18px Verdana";
+        ctx.fillText("Doughtnut chart", 100, 100);
 
         // Display the tweet
         ctx.beginPath();

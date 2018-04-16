@@ -99,7 +99,7 @@ function init() {
         ctx.beginPath();
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
-        ctx.font = "20px Verdana";
+        ctx.font = "14px Verdana";
         ctx.fillText(obj["0"].text, x + 2, y + 200);
         ctx.closePath();
 

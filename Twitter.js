@@ -134,8 +134,9 @@ function init() {
         ctx.fillStyle = rtColour;
         ctx.fillText(obj["0"].user.statuses_count, x - 100, y + 275);
         ctx.closePath();
-    }
-} //Canvas function end
+
+    } // Data show function ends
+} // Init function end
 
 //References
 //-----

@@ -20,8 +20,7 @@ ctx.canvas.height = window.innerHeight;
 var url = "http://rainerleit.eu/jsonib/tweets.json";
 
 var textColour = "#fff", // White colour for the text
-    likesColour = "#e81c4f", // Red for the likes number text
-    rtColour = "#34E034"; // Green for the retweets number text
+    likesRtColor = "#002f7b"; // Colour for the likes and retweets number text
 
 var img = new Image, // Creating a new image variable for likes icon
     img2 = new Image, // Creating a new image variable for RTs icon
@@ -95,7 +94,7 @@ function init() {
         prof.onload = function () {
             ctx.beginPath();
             ctx.arc(x - 122, y + 125, 24, 0, 2 * Math.PI);
-            ctx.strokeStyle = "#0145b2";
+            ctx.strokeStyle = "#002f7b";
             ctx.lineWidth = 4;
             ctx.stroke();
 
@@ -132,28 +131,28 @@ function init() {
         // The total favourite's on the tweet
         ctx.beginPath();
         img.onload = function () {
-            ctx.drawImage(img, x - 47, y + 230);
+            ctx.drawImage(img, x - 620, y - 180);
         };
 
-        img.src = "http://media.uclan.ac.uk/~iadam3/Code%20Design/heart.png";
+        img.src = "http://media.uclan.ac.uk/~iadam3/Code%20Design/Like.png";
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
-        ctx.font = "18px Verdana";
-        ctx.fillStyle = likesColour;
-        ctx.fillText(obj["0"].user.favourites_count, x - 30, y + 275);
+        ctx.font = "30px Verdana";
+        ctx.fillStyle = likesRtColor;
+        ctx.fillText(obj["0"].user.favourites_count, x - 30, y - 180);
         ctx.closePath();
 
         // The total retweet's on the tweet
         ctx.beginPath();
         img2.onload = function () {
-            ctx.drawImage(img2, x - 122, y + 230);
+            ctx.drawImage(img2, x - 650, y - 350);
         };
-        img2.src = "http://media.uclan.ac.uk/~iadam3/Code%20Design/retweet.png"; // Source for the favourite's icon.
+        img2.src = "http://media.uclan.ac.uk/~iadam3/Code%20Design/Retweet.png"; // Source for the favourite's icon.
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
-        ctx.font = "18px Verdana";
-        ctx.fillStyle = rtColour;
-        ctx.fillText(obj["0"].user.statuses_count, x - 100, y + 275);
+        ctx.font = "30px Verdana";
+        ctx.fillStyle = likesRtColor;
+        ctx.fillText(obj["0"].user.statuses_count, x - 100, y - 350);
         ctx.closePath();
 
 

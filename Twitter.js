@@ -81,7 +81,7 @@ function init() {
         ctx.beginPath();
         prof.onload = function () {
             ctx.beginPath();
-            ctx.arc(x - 122, y + 125, 40, 0, 2 * Math.PI);
+            ctx.arc(x - 122, y + 125, 24, 0, 2 * Math.PI);
             ctx.strokeStyle = "#0145b2";
             ctx.lineWidth = 4;
             ctx.stroke();
@@ -91,8 +91,6 @@ function init() {
 
             ctx.closePath();
         };
-
-
 
         // Display the tweet
         ctx.beginPath();

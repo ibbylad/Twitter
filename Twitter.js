@@ -41,6 +41,17 @@ setInterval(function () {
     });
 }, 5000);
 
+//var mess =
+//
+//    function success() {
+//        if (obj.user.statuses_count < 50000) {
+//            message = "Awesome"
+//        } else {
+//            message = "Good";
+//        }
+//        document.getElementById("zCanvas").innerHTML = message;
+//    }
+
 /*downloads one or more urls
 Rdocumentation.org. (2018). getURL function | RDocumentation. [online] Available at: https://www.rdocumentation.org/packages/RCurl/versions/1.95-4.8/topics/getURL [Accessed 3 Apr. 2018].
 
@@ -59,6 +70,8 @@ var obj = JSON.parse(Get(url));
 console.log(obj);
 
 init();
+
+success();
 
 // Canvas function
 function init() {
@@ -100,6 +113,14 @@ function init() {
         ctx.fillText(obj["0"].text, x + 2, y + 200);
         ctx.closePath();
 
+        // Display the tweet success message
+        //        ctx.beginPath();
+        //        ctx.textAlign = "center";
+        //        ctx.textBaseline = "middle";
+        //        ctx.font = "14px Verdana";
+        //        ctx.fillText(success, x + 2, y + 100);
+        //        ctx.closePath();
+
         // Display the user's name
         ctx.beginPath();
         ctx.textAlign = "center";
@@ -134,6 +155,7 @@ function init() {
         ctx.fillStyle = rtColour;
         ctx.fillText(obj["0"].user.statuses_count, x - 100, y + 275);
         ctx.closePath();
+
 
     } // Data show function ends
 } // Init function end

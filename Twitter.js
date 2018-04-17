@@ -65,7 +65,7 @@ function init() {
 
     Z(ctx, ctx.canvas.width / 2, ctx.canvas.height / 2);
 
-    //zFunctionBegin
+    // Function for the data show begins
     function Z(ctx, x, y) {
         ctx.beginPath();
         ctx.fillStyle = textColour;

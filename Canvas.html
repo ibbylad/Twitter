@@ -12,28 +12,8 @@
 
 <body>
     <!--Canvas set up-->
-    <canvas id="zCanvas" width="600" height="600" style="border:3px solid black; background:#071c3d; position: absolute; left: 0; top: 0; z-index: 0;">
+    <canvas id="zCanvas" width="600" height="600" style="background:cornflowerblue; position: absolute; left: 0; top: 0; z-index: 0;">
     </canvas>
-
-    <script>
-        var data = [{
-                value: 300,
-                color: "cornflowerblue",
-                highlight: "lightskyblue",
-                label: "Corn Flower Blue"
-            },
-            {
-                value: 50,
-                color: "lightgreen",
-                highlight: "yellowgreen",
-                label: "Lightgreen"
-            },
-        ];
-
-        //draw
-        var piechart = new chart(ctx).Doughnut(data);
-
-    </script>
 
     <!--Link the JavaScript file-->
     <script src="http://media.uclan.ac.uk/~iadam3/Code%20Design/Assignment%202/twitter.js"></script>

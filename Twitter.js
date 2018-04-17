@@ -82,7 +82,7 @@ function init() {
         prof.onload = function () {
             ctx.beginPath();
             ctx.arc(x - 122, y + 125, 24, 0, 2 * Math.PI);
-            ctx.strokeStyle = "#fff";
+            ctx.strokeStyle = "#4E91FD";
             ctx.lineWidth = 4;
             ctx.stroke();
 

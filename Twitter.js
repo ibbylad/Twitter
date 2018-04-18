@@ -90,6 +90,7 @@ function init() {
         ctx.closePath();
 
         // Displaying the user's profile picture
+        // Drawing the arc to sit around the user's profile picture
         ctx.beginPath();
         prof.onload = function () {
             ctx.beginPath();
@@ -99,16 +100,24 @@ function init() {
             ctx.stroke();
 
             ctx.clip();
-            ctx.drawImage(prof, x - 146, y + 100);
+            ctx.drawImage(prof, x - 146, y + 100); // User's profile picture position 
 
             ctx.closePath();
         };
+
+        // Display the user's name
+        ctx.beginPath();
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        ctx.font = "20px Verdana";
+        ctx.fillText(obj["0"].user.screen_name, x + 2, y + 125);
+        ctx.closePath();
 
         // Display the tweet
         ctx.beginPath();
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
-        ctx.font = "14px Verdana";
+        ctx.font = "18px Verdana";
         ctx.fillText(obj["0"].text, x + 2, y + 200);
         ctx.closePath();
 
@@ -120,41 +129,33 @@ function init() {
         //        ctx.fillText(success, x + 2, y + 100);
         //        ctx.closePath();
 
-        // Display the user's name
-        ctx.beginPath();
-        ctx.textAlign = "center";
-        ctx.textBaseline = "middle";
-        ctx.font = "18px Verdana";
-        ctx.fillText(obj["0"].user.screen_name, x + 2, y + 125);
-        ctx.closePath();
-
-        // The total favourite's on the tweet
-        ctx.beginPath();
-        img.onload = function () {
-            ctx.drawImage(img, x - 620, y - 180);
-        };
-
-        img.src = "http://media.uclan.ac.uk/~iadam3/Code%20Design/Like.png";
-        ctx.textAlign = "center";
-        ctx.textBaseline = "middle";
-        ctx.font = "30px Verdana";
-        ctx.fillStyle = likesRtColor;
-        ctx.fillText(obj["0"].user.favourites_count, x - 30, y - 180);
-        ctx.closePath();
-
-        // The total retweet's on the tweet
+        // The total retweets on the tweet
+        // Drawing the retweets icon on the canvas
         ctx.beginPath();
         img2.onload = function () {
             ctx.drawImage(img2, x - 650, y - 350);
         };
-        img2.src = "http://media.uclan.ac.uk/~iadam3/Code%20Design/Retweet.png"; // Source for the favourite's icon.
+        img2.src = "http://media.uclan.ac.uk/~iadam3/Code%20Design/Assignment%202/Retweet.png"; // Source for the retweets icon.
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
-        ctx.font = "30px Verdana";
+        ctx.font = "50px Courier New";
         ctx.fillStyle = likesRtColor;
-        ctx.fillText(obj["0"].user.statuses_count, x - 100, y - 350);
+        ctx.fillText(obj["0"].user.statuses_count, x - 250, y - 310); // Retweets number and position
         ctx.closePath();
 
+        // The total likes on the tweet
+        // Drawing the likes icon on the canvas
+        ctx.beginPath();
+        img.onload = function () {
+            ctx.drawImage(img, x - 620, y - 180);
+        };
+        img.src = "http://media.uclan.ac.uk/~iadam3/Code%20Design/Assignment%202/Like.png"; // Source for the likes icon.
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        ctx.font = "50px Courier New";
+        ctx.fillStyle = likesRtColor;
+        ctx.fillText(obj["0"].user.favourites_count, x - 250, y - 135); // Likes number and position
+        ctx.closePath();
 
     } // Data show function ends
 } // Init function end

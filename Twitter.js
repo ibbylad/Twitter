@@ -1,12 +1,4 @@
-/*refresh page 
-window.setInterval('refresh()', 5000); // CALL A FUNCTION EVERY 10000 MILLISECONDS OR 10 SECONDS.
-
-// REFRESH OR RELOAD PAGE.
-function refresh() {
-    window.location.reload();
-}
-
-/*Banik, A. (2018). How to Auto Refresh Page Every 10 Seconds using JavaScript setInterval() Method. [online] Encodedna.com. Available at: http://www.encodedna.com/javascript/auto-refresh-page-every-10-second-using-javascript-setInterval-method.htm [Accessed 3 Apr. 2018].    */
+// BY IBRAHIM ADAM AND DANIEL ENGLAND
 
 // Canvas set up
 var c = document.getElementById("zCanvas");
@@ -40,22 +32,6 @@ setInterval(function () {
     });
 }, 5000);
 
-//var mess =
-//
-//    function success() {
-//        if (obj.user.statuses_count < 50000) {
-//            message = "Awesome"
-//        } else {
-//            message = "Good";
-//        }
-//        document.getElementById("zCanvas").innerHTML = message;
-//    }
-
-/*downloads one or more urls
-Rdocumentation.org. (2018). getURL function | RDocumentation. [online] Available at: https://www.rdocumentation.org/packages/RCurl/versions/1.95-4.8/topics/getURL [Accessed 3 Apr. 2018].
-
-*/
-
 function Get(url) {
     var Httpreq = new XMLHttpRequest(); // Create a new request for the canvas
     Httpreq.open("GET", url, false);
@@ -63,14 +39,24 @@ function Get(url) {
     return Httpreq.responseText;
 }
 
-// Function to create the JSON parse. 
+// JSON parse. 
 var obj = JSON.parse(Get(url));
 
+var mess = obj["0"].user.statuses_count;
+
+function success() {
+    if (mess < 50000) {
+        message = "Awesome";
+    } else {
+        message = "Good";
+    }
+    document.getElementById("zCanvas").innerHTML = message;
+}
+
+// Debugging the JSON object
 console.log(obj);
 
 init();
-
-success();
 
 // Canvas function
 function init() {
@@ -122,12 +108,12 @@ function init() {
         ctx.closePath();
 
         // Display the tweet success message
-        //        ctx.beginPath();
-        //        ctx.textAlign = "center";
-        //        ctx.textBaseline = "middle";
-        //        ctx.font = "14px Verdana";
-        //        ctx.fillText(success, x + 2, y + 100);
-        //        ctx.closePath();
+        ctx.beginPath();
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        ctx.font = "14px Verdana";
+        ctx.fillText(success, x + 2, y + 100);
+        ctx.closePath();
 
         // The total retweets on the tweet
         // Drawing the retweets icon on the canvas
@@ -158,7 +144,7 @@ function init() {
         ctx.closePath();
 
     } // Data show function ends
-} // Init function end
+} // Init function ends
 
 //References
 //-----

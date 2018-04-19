@@ -44,12 +44,12 @@ var obj = JSON.parse(Get(url));
 
 var mess = obj["0"].user.statuses_count;
 
-var messages = "this is a message";
+var messages = "#Average"; // This if statement allows us to display a message based on the number retweets the currently displayed tweet has 
 
-if(mess < 50000) {
-    messages = "Good";
-} else {
-    messages = "Bad";
+if(mess > 40000) {
+    messages = "#Awesome";
+} else if(mess < 10000) {
+    messages = "#Poor";
 }
 
 
@@ -112,8 +112,8 @@ function init() {
         ctx.beginPath();
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
-        ctx.font = "14px Verdana";
-        ctx.fillText(messages, x + 2, y + 100);
+        ctx.font = "60px Verdana";
+        ctx.fillText(messages, x + 280, y + -240);
         ctx.closePath();
 
         // The total retweets on the tweet

@@ -46,7 +46,7 @@ var mess = obj["0"].user.statuses_count;
 
 function success() {
     if (mess < 50000) {
-        message = "Awesome";
+        message = "Good";
     } else {
         message = "Good";
     }

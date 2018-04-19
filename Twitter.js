@@ -44,19 +44,20 @@ var obj = JSON.parse(Get(url));
 
 var mess = obj["0"].user.statuses_count;
 
-function success() {
-    if (mess < 50000) {
-        message = "Good";
-    } else {
-        message = "Good";
-    }
-    document.getElementById("zCanvas").innerHTML = message;
+var messages = "this is a message";
+
+if(mess < 50000) {
+    messages = "Good";
+} else {
+    messages = "Bad";
 }
+
 
 // Debugging the JSON object
 console.log(obj);
 
 init();
+success(mess);
 
 // Canvas function
 function init() {
@@ -112,7 +113,7 @@ function init() {
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
         ctx.font = "14px Verdana";
-        ctx.fillText(success, x + 2, y + 100);
+        ctx.fillText(messages, x + 2, y + 100);
         ctx.closePath();
 
         // The total retweets on the tweet

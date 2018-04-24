@@ -12,7 +12,7 @@ ctx.canvas.height = window.innerHeight;
 var url = "http://rainerleit.eu/jsonib/tweets.json";
 
 var textColour = "#fff", // White colour for the text
-    likesRtColor = "#002f7b"; // Colour for the likes and retweets number text
+    likesRtColor = "#99C0FF"; // Colour for the likes and retweets number text
 
 var img = new Image, // Creating a new image variable for likes icon
     img2 = new Image, // Creating a new image variable for RTs icon
@@ -44,7 +44,7 @@ var obj = JSON.parse(Get(url));
 
 var mess = obj["0"].user.statuses_count;
 
-var messages = "#Average"; // This if statement allows us to display a message based on the number retweets the currently displayed tweet has 
+var messages = "#Average"; // This if statement allows us to display a message based on the number retweets the currently displayed tweet has
 
 if(mess > 40000) {
     messages = "#Awesome";

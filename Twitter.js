@@ -1,4 +1,15 @@
-// BY IBRAHIM ADAM AND DANIEL ENGLAND
+//References: 
+//BY IBRAHIM ADAM AND DANIEL ENGLAND
+//https://codepen.io/jboeijenga/pen/pveQBz?depth=everything&order=popularity&page=3&q=canvas+particle&show_forks=false
+//NODE STREAM = https://github.com/davidwarrington/twitter-stream
+//Code used from W3 Schools. URLs are as follows:
+//To create a canvas = https://www.w3schools.com/html/html5_canvas.asp
+//To create an Arc = https://www.w3schools.com/tags/canvas_arc.asp
+//To create an Rectangle = https://www.w3schools.com/tags/canvas_rect.asp
+//To create a line = https://www.w3schools.com/html/html5_canvas.asp
+//To close a path = https://www.w3schools.com/tags/canvas_closepath.asp
+//To create a function = https://www.w3schools.com/js/js_functions.as
+//This JavaScript file was passed on to us from Rainer Lit. We have modified it all to suit our needs.
 
 // Canvas set up
 var c = document.getElementById("zCanvas");
@@ -46,9 +57,9 @@ var mess = obj["0"].user.statuses_count;
 
 var messages = "#Average"; // This if statement allows us to display a message based on the number retweets the currently displayed tweet has 
 
-if(mess > 40000) {
+if (mess > 40000) {
     messages = "#Awesome";
-} else if(mess < 10000) {
+} else if (mess < 10000) {
     messages = "#Poor";
 }
 
@@ -146,7 +157,3 @@ function init() {
 
     } // Data show function ends
 } // Init function ends
-
-//References
-//-----
-//https://codepen.io/jboeijenga/pen/pveQBz?depth=everything&order=popularity&page=3&q=canvas+particle&show_forks=false

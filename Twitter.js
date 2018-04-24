@@ -44,7 +44,7 @@ var obj = JSON.parse(Get(url));
 
 var mess = obj["0"].user.statuses_count;
 
-var messages = "#Average"; // This if statement allows us to display a message based on the number retweets the currently displayed tweet has
+var messages = "#Average"; // This if statement allows us to display a message based on the number retweets the currently displayed tweet has 
 
 if(mess > 40000) {
     messages = "#Awesome";
@@ -82,7 +82,7 @@ function init() {
         prof.onload = function () {
             ctx.beginPath();
             ctx.arc(x - 122, y + 125, 24, 0, 2 * Math.PI);
-            ctx.strokeStyle = "#002f7b";
+            ctx.strokeStyle = "#99C0FF";
             ctx.lineWidth = 4;
             ctx.stroke();
 
